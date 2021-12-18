@@ -400,7 +400,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699367735}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -116.6, y: -21.6, z: 0}
+  m_LocalPosition: {x: -116.6, y: 59.6, z: 0}
   m_LocalScale: {x: 12, y: 12, z: 0}
   m_Children: []
   m_Father: {fileID: 1007215992}
@@ -487,11 +487,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 699367735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b65646657f183049bf9721c5d6568e1, type: 3}
+  m_Script: {fileID: 11500000, guid: 34cf99e4f6bc4614e975468559e5d183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SnakeHead: {fileID: 699367735}
-  speed: 5
+  MoveSpeed: 1
 --- !u!1 &934967921
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +572,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 934967924}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699367739}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: GoLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &934967924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,7 +861,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1947158112}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 699367739}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: GoRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1947158112
 MonoBehaviour:
   m_ObjectHideFlags: 0

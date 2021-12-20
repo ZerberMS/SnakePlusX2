@@ -9,7 +9,8 @@ public class Movement : MonoBehaviour
 
     public void FixedUpdate()
     {
-        this.transform.position = new Vector3(Mathf.Round(this.transform.position.x) + _movement.x, Mathf.Round(this.transform.position.y) + _movement.y, 0.0f);
+        this.transform.position = new Vector3(Mathf.Round(this.transform.position.x) + _movement.x,
+            Mathf.Round(this.transform.position.y) + _movement.y, 0.0f);
     }
     public void GoLeft()
     {

@@ -1,2 +1,0 @@
-1) Fix the randomness of the spawner (currently only spawns at 0;0)
-2) The spawner does not detect the trigger entrance
